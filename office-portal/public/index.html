@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Portal</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+        color: #f8fafc;
+        padding: 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 520px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 32px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+      }
+      h1 { font-size: 1.75rem; margin-bottom: 8px; }
+      p { color: #cbd5e1; margin-bottom: 28px; line-height: 1.5; }
+      .apps { display: grid; gap: 12px; }
+      a.app {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: inherit;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background 0.15s, transform 0.15s;
+      }
+      a.app:hover {
+        background: rgba(255, 255, 255, 0.14);
+        transform: translateY(-1px);
+      }
+      .icon { font-size: 1.5rem; }
+      .label { font-weight: 600; font-size: 1rem; }
+      .desc { font-size: 0.85rem; color: #94a3b8; margin-top: 2px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Office Portal</h1>
+      <p>Choose an app. Kaunch and Attenda run as separate micro frontends behind this gateway.</p>
+      <div class="apps">
+        <a class="app" href="/lunch/">
+          <span class="icon">🍽</span>
+          <div>
+            <div class="label">Kaunch</div>
+            <div class="desc">Lunch subscriptions, fines &amp; menu</div>
+          </div>
+        </a>
+        <a class="app" href="/attendance/">
+          <span class="icon">📅</span>
+          <div>
+            <div class="label">Attenda</div>
+            <div class="desc">Attendance &amp; leave management</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

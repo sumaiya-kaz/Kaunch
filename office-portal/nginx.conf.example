@@ -1,0 +1,39 @@
+# Example nginx config for production portal hosting.
+# Adjust paths and upstream ports for your deployment.
+
+server {
+    listen 80;
+    server_name office.example.com;
+
+    # Portal landing
+    location = / {
+        root /var/www/office-portal/public;
+        try_files /index.html =404;
+    }
+
+    # Kaunch API
+    location /lunch/api/ {
+        proxy_pass http://127.0.0.1:5000/api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    # Attenda API
+    location /attendance/api/ {
+        proxy_pass http://127.0.0.1:5280/api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    # Kaunch frontend (static build with base /lunch/)
+    location /lunch/ {
+        alias /var/www/kaunch-frontend/dist/;
+        try_files $uri $uri/ /lunch/index.html;
+    }
+
+    # Attenda frontend (static build with base /attendance/)
+    location /attendance/ {
+        alias /var/www/attenda-client/dist/;
+        try_files $uri $uri/ /attendance/index.html;
+    }
+}

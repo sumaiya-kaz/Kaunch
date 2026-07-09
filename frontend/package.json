@@ -12,7 +12,9 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:portal": "vite --mode portal",
     "build": "vite build",
+    "build:portal": "vite build --mode portal",
     "preview": "vite preview"
   },
   "devDependencies": {
