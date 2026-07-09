@@ -12,22 +12,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
-        color: #f8fafc;
+        background: linear-gradient(160deg, #fffbf7 0%, #fff4e8 45%, #ffe8cc 100%);
+        color: #1c1c1e;
         padding: 24px;
       }
       .card {
         width: 100%;
         max-width: 520px;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: #ffffff;
+        border: 1px solid #fde6c8;
         border-radius: 16px;
         padding: 32px;
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
+        box-shadow: 0 12px 40px rgba(244, 160, 37, 0.1);
       }
-      h1 { font-size: 1.75rem; margin-bottom: 8px; }
-      p { color: #cbd5e1; margin-bottom: 28px; line-height: 1.5; }
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 8px;
+        color: #d4891e;
+      }
+      p { color: #78716c; margin-bottom: 28px; line-height: 1.5; }
       .apps { display: grid; gap: 12px; }
       a.app {
         display: flex;
@@ -37,17 +42,19 @@
         border-radius: 12px;
         text-decoration: none;
         color: inherit;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: background 0.15s, transform 0.15s;
+        background: #fffaf3;
+        border: 1px solid #fde6c8;
+        transition: background 0.15s, transform 0.15s, border-color 0.15s, box-shadow 0.15s;
       }
       a.app:hover {
-        background: rgba(255, 255, 255, 0.14);
+        background: #fef3dc;
+        border-color: #f4c878;
         transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(244, 160, 37, 0.12);
       }
       .icon { font-size: 1.5rem; }
-      .label { font-weight: 600; font-size: 1rem; }
-      .desc { font-size: 0.85rem; color: #94a3b8; margin-top: 2px; }
+      .label { font-weight: 600; font-size: 1rem; color: #b45309; }
+      .desc { font-size: 0.85rem; color: #a8a29e; margin-top: 2px; }
     </style>
   </head>
   <body>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { authService } from '../services/authService';
+import { PORTAL_URL } from '../config/portal';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -80,6 +80,13 @@ const Login = () => {
           >
             {loading ? 'Logging in...' : 'Login'}
           </button>
+
+          <a
+            href={PORTAL_URL}
+            className="btn-secondary w-full block text-center"
+          >
+            ← Office Portal
+          </a>
         </form>
 
         <div className="mt-6 text-center text-sm text-neutral-700">
