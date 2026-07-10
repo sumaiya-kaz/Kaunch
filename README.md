@@ -39,17 +39,8 @@ Employees can view the published daily fine list and their personal fine history
 Kaunch/
 ├── backend/          # Node.js + Express API (port 5000)
 ├── frontend/         # React + Vite + Tailwind (port 3000)
-├── office-portal/    # Micro frontend gateway (port 8080) — Kaunch + Attenda
 └── *.md              # PRD, design system, setup guides, sheet data
 ```
-
-Kaunch integrates with **Attenda** (attendance & leave) via micro frontends. See [MICRO_FRONTEND.md](MICRO_FRONTEND.md).
-
-| Portal URL | App |
-|------------|-----|
-| http://localhost:8080 | Office portal home |
-| http://localhost:8080/lunch/ | Kaunch |
-| http://localhost:8080/attendance/ | Attenda |
 
 ### Tech Stack
 

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
-import { routerBasename } from './utils/basePath';
 
 // Pages
 import Login from './pages/Login';
@@ -30,7 +29,7 @@ function App() {
   }
 
   return (
-    <Router basename={routerBasename}>
+    <Router>
       <Routes>
         <Route path="/login" element={!user ? <Login /> : <Navigate to={user.role === 'admin' ? '/admin' : '/dashboard'} />} />
         

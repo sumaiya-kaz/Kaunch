@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { withBasePath } from '../utils/basePath';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -29,7 +28,7 @@ api.interceptors.response.use(
     if (error.response?.status === 401) {
       localStorage.removeItem('token');
       localStorage.removeItem('user');
-      window.location.href = withBasePath('/login');
+      window.location.href = '/login';
     }
     return Promise.reject(error);
   }
