@@ -45,3 +45,9 @@ coverage/
 *.temp
 .cache/
 postgresql-18.4-2-windows-x64.exe
+
+# Removed / experimental integrations (not part of Kaunch)
+auth-service/
+platform/
+attenda-api/
+office-portal/

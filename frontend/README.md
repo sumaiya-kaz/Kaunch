@@ -9,7 +9,7 @@ React + Vite + Tailwind CSS UI for the Kaunch Office Lunch Management System.
 - Employee: dashboard, subscription, history with **Daily Fine List**
 - Admin/HR: dashboard, **Daily Sheet**, fines, reports
 - Admin-only: employees, meal plan, settings
-- Portal-based **modals** for fine generation confirm + result
+- React portal **modals** for fine generation confirm + result
 
 ## Setup
 

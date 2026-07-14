@@ -565,9 +565,9 @@ A quick reference for common design decisions.
                                               components, screens,
                                               notifications, reports
 
-  v1.1          June 2026    Product          Daily Food Sheet screen, portal
-                                              modals, employee Daily Fine List,
-                                              half-manual fine workflow
+  v1.1          June 2026    Product          Daily Food Sheet screen, React
+                                              portal modals, employee Daily Fine
+                                              List, half-manual fine workflow
   ------------- ------------ ---------------- ---------------------------------
 
 *This document should be updated whenever a new component is introduced,

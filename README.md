@@ -186,5 +186,5 @@ MIT
 ---
 
 **Version:** 2.0.0  
-**Last Updated:** June 2026  
-**Status:** Production ready
+**Last Updated:** July 2026  
+**Status:** Production ready (standalone Kaunch — backend + frontend only)
