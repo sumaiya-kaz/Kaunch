@@ -5,8 +5,8 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
+    "start": "node init && node src/server.js",
+    "dev": "node init && nodemon src/server.js",
     "db:create": "node src/database/createDb.js",
     "migrate": "node src/database/migrate.js",
     "seed": "node src/database/seed.js",
@@ -15,7 +15,11 @@
     "db:setup": "npm run db:create && npm run migrate && npm run seed",
     "db:reset": "npm run migrate && npm run seed"
   },
-  "keywords": ["kaunch", "lunch", "management"],
+  "keywords": [
+    "kaunch",
+    "lunch",
+    "management"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
