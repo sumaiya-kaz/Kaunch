@@ -119,9 +119,9 @@ Employee: sumaiya@company.com / password123
 npm run build     # output: dist/
 npm run preview   # preview production build
 ```
-
 Set `VITE_API_URL` on Vercel/Netlify to your production API.
 
 ## License
 
 MIT
+
